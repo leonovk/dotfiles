@@ -102,6 +102,8 @@
 		"icon-size": 18,
 		"spacing": 10
 	},
+	
+
 
 	"hyprland/language": {
 		"format": "<span color='#fab387'></span> {}",
@@ -122,7 +124,7 @@
 	"clock": {
 		"format": "<span color='#fab387'></span> {:%H:%M}",
 		"tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
-		"format-alt": "<span color='#eba0ac'></span> <span color='#cdd6f4'>{:%d-%m-%Y}</span>",
+		"format-alt": "<span color='#eba0ac'></span> <span color='#cdd6f4'>{:%d.%m.%Y}</span>",
 
         "calendar": {
                     "mode"          : "month",
@@ -156,5 +158,4 @@
 
 	"escape": true,
 	"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-	}
 }
