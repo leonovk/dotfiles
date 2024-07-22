@@ -169,6 +169,20 @@ button:hover {
 	border: none;
 	border-radius: 20;
 }
+
+#bluetooth {
+	padding: 2 15;
+	margin: 5;
+	color: @fg;
+	background-color: @bg2;
+	border: none;
+	border-radius: 20;
+}
+
+#bluetooth.off {
+	opacity: 0;
+}
+
 #language:hover {
 	color: @yellow;
 }

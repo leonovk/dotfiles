@@ -6,7 +6,7 @@
 
 	"modules-left": ["cpu", "memory", "hyprland/workspaces", "hyprland/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "hyprland/language", "pulseaudio", "backlight", "battery"],
+	"modules-right": ["tray", "hyprland/language", "pulseaudio", "backlight", "battery", "custom/power"],
 
 	"custom/menu": {
 		"format": "{icon}",
@@ -103,6 +103,16 @@
 		"spacing": 10
 	},
 	
+	"bluetooth": {
+	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+	"format": " {status}",
+	"format-disabled": "", // an empty format will hide the module
+	"format-connected": " {num_connections} connected",
+	"tooltip-format": "{controller_alias}\t{controller_address}",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+},
+	
 
 
 	"hyprland/language": {
@@ -151,7 +161,7 @@
 	"custom/power": {
 		"format": "{icon}",
 		"format-icons": "",
-		"on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
+		"on-click": "wlogout",
 		"escape": true,
 		"tooltip": false
 	},
