@@ -57,14 +57,23 @@ button:hover {
 #workspaces button {
 	padding: 0 5px;
 	background-color: transparent;
-	color: @gf;
+	color: @fg;
 }
+
 #workspaces button:hover {
 	color: @yellow;
 }
 #workspaces button.focused {
 }
 #workspaces button.urgent {
+}
+
+#workspaces button.active {
+	color: #fab387;
+}
+
+window#waybar.empty #window {
+	opacity: 0;
 }
 
 #window {
