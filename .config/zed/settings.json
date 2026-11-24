@@ -7,15 +7,42 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
   "languages": {
     "Ruby": {
       "language_servers": ["ruby-lsp"],
-    },
+      "format_on_save": "off"
+    }
   },
-  "ui_font_family": ".ZedSans",
+  "lsp": {
+    "ruby-lsp": {
+      "settings": {
+        "use_bundler": false
+      }
+    }
+  },
+  "icon_theme": "Catppuccin Latte",
+  "ui_font_size": 17.5,
+  "buffer_font_size": 17.5,
   "buffer_font_family": "JetBrains Mono",
-  "icon_theme": "Material Icon Theme",
-  "ui_font_size": 18.5,
-  "buffer_font_size": 18.5,
-  "theme": "GitHub Dark Classic",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "vim_mode": true,
+  "relative_line_numbers": "enabled"
 }
