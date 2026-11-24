@@ -6,8 +6,11 @@ padding.x = 15
 padding.y = 15
 opacity = 0.95
 decorations = "Buttonless"
+
+[window.dimensions]
+columns = 120
+lines = 35
   
 [font]
 normal.family = "JetBrainsMono Nerd Font"
 size = 15
-
